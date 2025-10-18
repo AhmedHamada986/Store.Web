@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Entities.Product
 {
-    public class ProductBrand: BaseEntity<int>
+    public class BaseEntity<TKey>
     {
-        //public int Id { get; set; }
-        public string Name { get; set; }
+        public TKey Id { get; set; }
     }
 }

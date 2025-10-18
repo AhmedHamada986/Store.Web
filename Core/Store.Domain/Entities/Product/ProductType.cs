@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Entities.Product
 {
-    public class ProductType
+    public class ProductType:BaseEntity<int>
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
 
         public string Name { get; set; }    
     }
